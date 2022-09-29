@@ -23,6 +23,15 @@ namespace WpfExample1
         public MainWindow()
         {
             InitializeComponent();
+            textFname.Focus();
+        }
+
+        private void btnSend_Click(object sender, RoutedEventArgs e)
+        {
+            
+            string fn=textFname.Text;
+            string ln=textLname.Text;
+            tbResult.Text = "Hello " + fn + " " + ln;
         }
     }
 }
